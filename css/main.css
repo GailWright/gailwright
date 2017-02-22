@@ -1,0 +1,29 @@
+/*This is the reset*/
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+a{color:inherit;}
+
+/*------Universal Section------*/
+
+
+
+
+/*------header section-----*/
+.banner{
+  min-height: 50vh;
+  background-image: url("/images/virtualassistant.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+h1{
+  padding: 5%;
+  font-size:3.5rem;
+  text-align: center;
+  text-shadow: 2px 1px black;
+  color: white;
+  }
