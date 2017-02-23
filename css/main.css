@@ -15,8 +15,7 @@ a {
 
 body {
     font-family: 'Lato', sans-serif;
-    color: #black
-}
+    }
 
 header, section, footer {
     padding: 2% 6%;
@@ -81,23 +80,35 @@ h2 {
 }
 
 h3 {
-    text-shadow: 2px 1px black;
-    color: white;
-    text-align: center;
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 10px 0;
 }
 
 header a {
     font-size: 20px;
     padding: 2% 1.5% 1%;
 }
+
+
 /*-------body------------*/
+
+.information {
+  background-color: #efefef;
+}
 
 .information grid-3 {
   font-size:2rem:
   margin:1rem;
   text-align: justify;
   display:block;
+
 }
+
+.aboutme {
+  font-size: 1.5rem;
+}
+
 
 /*--- This is my footer section---*/
 
