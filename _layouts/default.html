@@ -1,22 +1,73 @@
 <!DOCTYPE html>
 <html>
 <!--This is the head and it is in the includes folder -->
-  {% include head.html %}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <title>{{ page.title }}</title>
+
+<!--This is fonts awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!--This is the font I am using from Google Fonts  -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<!-- This is the gridlex link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.2.4/gridlex.min.css">
+  <link rel="stylesheet" text="text/css" href="css/main.css">
+
+</head>
   <body>
     <!--this is my shared site header which is in the includes folder  -->
-    {% include site-header.html %}
+    <header class="grid-2-middle">
+    <!--This is for header information-->
+
+    <!--This is where my logo will live  -->
+
+      <div class="logo col">
+         LOGO
+      </div>
+      <nav class="logo col right no-padding">
+        <!--This is where my nav will reside  -->
+        <a href="index">Home</a>
+        <a href="about">About</a>
+        <a href="services">Services</a>
+        <a href="rates">Rates</a>
+        <a href="contact">Contact</a>
+      </nav>
+    </header>
+    <section class="banner">
+
+      <div>
+        <h1>{{page.banner-text}}</h1>
+      </div>
+
+      <div>
+        <h2 class="right">{{page.banner-catchy-phrase}}</h2>
+      </div>
+    </section>
+
 
     <!--This is where all my site content goes  -->
     {{ content }}
 
   </body>
 
-  <footer>
+    <footer class="background center">
 <!--This is the footer and it is in the includes folder  -->
 
-  {% include site-footer.html %}
+
+        <h2 class="center" id="contact">Get in touch </h2>
+        <a class="block"href="tell:+61400019387"><i class="fa fa-mobile" aria-hidden="true"></i>+6140019387</a>
+        <a class="block"href="mailto:hello@gailwrightva.com.au" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i>hello@gailwrightva.com.au</a>
+
+        <nav >
+          <a href="linkedin">Linkedin</a>
+          <a href="linkedin">Facebook</a>
+          <a href="linkedin">Instragram</a>
+        </nav>
 
 
-  </footer>
+
+    </footer>
 </html>

@@ -1,29 +1,97 @@
 /*This is the reset*/
-*{
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-a{color:inherit;}
+a {
+    color: inherit;
+}
+
 
 /*------Universal Section------*/
 
+body {
+    font-family: 'Lato', sans-serif;
+    color: #black
+}
 
+header, section, footer {
+    padding: 2% 6%;
+}
 
+h1, h2, h3, h4 {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.no-padding {
+    padding: 0;
+}
+.padding-1{
+  display:inline-block;
+  padding: 1%;
+}
+
+.block{
+  display:block;  
+}
 
 /*------header section-----*/
-.banner{
-  min-height: 50vh;
-  background-image: url("/images/virtualassistant.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+
+.banner {
+    min-height: 50vh;
+    background-image: url("/images/virtualassistant.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
-h1{
-  padding: 5%;
-  font-size:3.5rem;
-  text-align: center;
-  text-shadow: 2px 1px black;
-  color: white;
-  }
+
+h1 {
+    padding: 5%;
+    font-size: 3.5rem;
+    text-align: center;
+    text-shadow: 2px 1px black;
+    color: white;
+}
+
+h2 {
+    text-shadow: 2px 1px black;
+    color: white;
+}
+
+h3 {
+    text-shadow: 2px 1px black;
+    color: white;
+    text-align: center;
+}
+
+header a {
+    font-size: 20px;
+    padding: 2% 1.5% 1%;
+}
+
+
+/*--- This is my footer section---*/
+
+.background {
+    background-color: grey;
+    color: white;
+}
