@@ -33,6 +33,9 @@ h1 {
 h2 {
     font-size: 2rem;
 }
+h3{
+  font-size: 1.5rem;
+}
 
 .center {
     text-align: center;
@@ -51,7 +54,7 @@ h2 {
 }
 
 .block{
-  display:block;  
+  display:block;
 }
 
 /*------header section-----*/
@@ -87,7 +90,14 @@ header a {
     font-size: 20px;
     padding: 2% 1.5% 1%;
 }
+/*-------body------------*/
 
+.information grid-3 {
+  font-size:2rem:
+  margin:1rem;
+  text-align: justify;
+  display:block;
+}
 
 /*--- This is my footer section---*/
 
