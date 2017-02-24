@@ -3,15 +3,34 @@ layout: default
 title: Gail Wright
 banner-text: Services
 services:
-  -title: General Administration
+  - title: General Administration
+    li:
+      - test: 1
+      - test: 1
+      - test: 1
+      - test: 1
+      - test: 1
+  - title: General Administration
+    li:
+      - test: 1
+      - test: 1
+      - test: 1
+      - test: 1
+      - test: 1
+  - title: General Administration
 
 ---
 
 <!-- <body>  -->
 <section class="services">
   {% for services in page.services %}
-  <div >
+  <div class="service-border">
     <h3>{{services.title}}</h3>
+    <ul>
+    {% for thing in services.li %}
+      <li>{{thing.test}}</li>
+    {% endfor %}
+    </ul>
   </div>
   {% endfor %}
 </section>

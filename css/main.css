@@ -3,8 +3,8 @@
 2. Universal Items
 3. Header
 4. Navigation
-5. Body
-6. Footer
+5. Footer
+6.
 */
 
 
@@ -57,6 +57,13 @@ h3 {
 }
 a {
     text-decoration: none;
+}
+.service-border {
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 10px;
+  border: 2px solid grey;
+  padding: 10%
 }
 
 /*------header section-----*/
