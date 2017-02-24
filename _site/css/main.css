@@ -32,8 +32,8 @@ h1 {
 h2 {
     font-size: 2rem;
 }
-h3{
-  font-size: 1.5rem;
+h3 {
+   font-size: 1.5rem;
 }
 
 .center {
@@ -54,6 +54,10 @@ h3{
 
 .block{
   display:block;
+}
+
+a {
+    text-decoration: none;
 }
 
 /*------header section-----*/
@@ -109,6 +113,10 @@ header a {
   font-size: 1.5rem;
 }
 
+}
+a:hover {
+color: blue;
+}
 
 /*--- This is my footer section---*/
 
