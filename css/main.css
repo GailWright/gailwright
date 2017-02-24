@@ -59,11 +59,14 @@ a {
     text-decoration: none;
 }
 .service-border {
-  min-width: 50px;
-  min-height: 50px;
+  min-width: 70px;
+  min-height: 70px;
   border-radius: 10px;
   border: 2px solid grey;
-  padding: 10%
+  padding: 1% 4%;
+}
+.project img {
+  width:100%;
 }
 
 /*------header section-----*/
@@ -112,6 +115,39 @@ header a {
 }
 a:hover {
 color: blue;
+}
+
+/*----- Interactive blocks -----*/
+.interactive-block {
+  position: relative;
+  overflow: hidden;
+}
+.interactive-button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 15px;
+  margin-left: -45px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+}
+.interactive-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100%;
+  padding: 0 1em;
+  text-align: center;
+  color: #ffffff;
+  transform: translateY(100%);
+  transition: all 0.5s ease;
+}
+.interactive-content.active {
+  transform: translateY(0);
 }
 
 /*--- This is my footer section---*/

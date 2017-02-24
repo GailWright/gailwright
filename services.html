@@ -5,26 +5,42 @@ banner-text: Services
 services:
   - title: General Administration
     li:
-      - test: 1
-      - test: 1
-      - test: 1
-      - test: 1
-      - test: 1
-  - title: General Administration
+      - test: Create, edit , populate Excel and Word Documents
+      - test: Data Entry & Formatting
+      - test: Email Inbox Mangement
+      - test: Diary Management
+      - test: Personal Assistant
+  - title: Information Technology
     li:
-      - test: 1
-      - test: 1
-      - test: 1
-      - test: 1
-      - test: 1
-  - title: General Administration
+      - test: User Acceptance Testing
+      - test: Bug Reporting
+      - test: 1st & 2nd line System Support
+      - test: Systems Training
+      - test: Hardware Setup and Maintenance
+      - test: Personal appointment bookings
+      - test: House checks (when away)
+  - title: Lifestyle Management
+    li:
+      - test: Travel Bookings (Business & Personal)
+      - test: Event Planning
+      - test: Appointment Booking (Personal)
+      - test: Personal appointment bookings
+      - test: Gift Purchases
+      - test: Gift Wrapping
+      - test: House checks (Mail, plants etc)
 
 ---
 
 <!-- <body>  -->
-<section class="services">
+<section>
+  <div>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+</section>
+
+<section class="services grid-center-spaceAround">
   {% for services in page.services %}
-  <div class="service-border">
+  <div class="service-border col-3">
     <h3>{{services.title}}</h3>
     <ul>
     {% for thing in services.li %}
