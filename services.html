@@ -1,11 +1,17 @@
 ---
 layout: default
 title: Gail Wright
-banner-text: About
+banner-text: Services
+services:
+  -title: General Administration
 
 ---
 
 <!-- <body>  -->
-<section>
-
+<section class="services">
+  {% for services in page.services %}
+  <div >
+    <h3>{{services.title}}</h3>
+  </div>
+  {% endfor %}
 </section>

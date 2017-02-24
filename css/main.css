@@ -1,3 +1,14 @@
+/*Table of Contents
+1. Reset
+2. Universal Items
+3. Header
+4. Navigation
+5. Body
+6. Footer
+*/
+
+
+
 /*This is the reset*/
 
 * {
@@ -5,45 +16,35 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 a {
     color: inherit;
 }
-
-
 /*------Universal Section------*/
 
 body {
     font-family: 'Lato', sans-serif;
     }
-
 header, section, footer {
     padding: 2% 6%;
 }
-
 h1, h2, h3, h4 {
     font-family: 'Lato', sans-serif;
 }
-
 h1 {
     font-size: 4.5rem;
 }
-
 h2 {
     font-size: 2rem;
 }
 h3 {
    font-size: 1.5rem;
 }
-
 .center {
     text-align: center;
 }
-
 .right {
     text-align: right;
 }
-
 .no-padding {
     padding: 0;
 }
@@ -51,11 +52,9 @@ h3 {
   display:inline-block;
   padding: 1%;
 }
-
 .block{
   display:block;
 }
-
 a {
     text-decoration: none;
 }
@@ -69,7 +68,6 @@ a {
     background-position: center;
     background-attachment: fixed;
 }
-
 h1 {
     padding: 5%;
     font-size: 3.5rem;
@@ -77,42 +75,33 @@ h1 {
     text-shadow: 2px 1px black;
     color: white;
 }
-
 h2 {
     text-shadow: 2px 1px black;
     color: white;
 }
-
 h3 {
       font-size: 1.2rem;
       text-align: center;
       padding: 10px 0;
 }
-
 header a {
     font-size: 20px;
     padding: 2% 1.5% 1%;
 }
-
 
 /*-------body------------*/
 
 .information {
   background-color: #efefef;
 }
-
 .information grid-3 {
   font-size:2rem:
   margin:1rem;
   text-align: justify;
   display:block;
-
 }
-
 .aboutme {
   font-size: 1.5rem;
-}
-
 }
 a:hover {
 color: blue;
