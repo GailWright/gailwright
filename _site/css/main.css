@@ -39,6 +39,9 @@ h2 {
 h3 {
    font-size: 1.5rem;
 }
+p {
+  font-size: 1.1rem;
+}
 .center {
     text-align: center;
 }
@@ -56,7 +59,7 @@ h3 {
   display:block;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 .service-border {
   min-width: 70px;
@@ -67,6 +70,34 @@ a {
 }
 .project img {
   width:100%;
+}
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 50px 0;
+
+  }
+form label {
+  display: block;
+}
+form input, form textarea {
+  width: 100%;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+form textarea {
+height: 150px;
+}
+
+/*boxed border style*/
+.boxed-border {
+  border: 2px;
+  border-color: #e4bdb8;
+  border-style: solid;
+  padding: 10%;
 }
 
 /*------header section-----*/
@@ -93,6 +124,11 @@ h3 {
       font-size: 1.2rem;
       text-align: center;
       padding: 10px 0;
+}
+h4{
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px 0;
 }
 header a {
     font-size: 20px;
@@ -149,6 +185,19 @@ color: blue;
 .interactive-content.active {
   transform: translateY(0);
 }
+/*This is the rates section*/
+.boxed-one-size-fits p {
+  line-height: 2;
+  padding: 2%;
+}
+.boxed-border p {
+  line-height: 2;  
+}
+
+/*This is the contact section*/
+.form h4 {
+  line-height: 2;
+}
 
 /*--- This is my footer section---*/
 
@@ -156,3 +205,10 @@ color: blue;
     background-color: grey;
     color: white;
 }
+
+/*my media queries go here at the bottom of the page*/
+
+@media (max-width: 768px){
+  .skills .box .box-feature {
+    background-color: #eee;
+  }

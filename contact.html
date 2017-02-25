@@ -1,15 +1,50 @@
 ---
 layout: default
 title: Gail Wright
-banner-text: Contact
+banner-text: Let's Talk
 services: title
 ---
 <!-- Insert form for contact details here -->
 <!-- https://formspree.io/ -->
 <!-- Need to add details here  -->
-<form action="https://formspree.io/your@email.com"
+<section class="form">
+  <div class="grid">
+    <div class="col-12">
+            <h4>I offer a One hour free no obligation consultation, we can discuss your requirements in more detail – this can be via phone call, Skype or if you are local we can meet up for a coffee.</h4>
+    </div >
+  </div>
+</section>
+<section>
+
+<form class="form-container" action="https://formspree.io/your@email.com"
       method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
-</form>
+      <div class="grid">
+
+
+    <div class="col-6">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="First name">
+    </div>
+
+    <div class="col-6">
+      <label for="last-name">Surname </label>
+      <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+    </div>
+
+    <div class="col-12">
+      <label for="email">Email Address </label>
+      <input type="email" name="_replyto" id="email" placeholder="example@gmail.com">
+    </div>
+
+    <div class="col-12">
+      <label for="message-box">How can we help? </label>
+      <textarea name="message" placeholder="message-box">
+    </textarea>
+    </div>
+
+    <div class="col-12">
+      <input type="submit" value="Send">
+    </div>
+  </div>
+  </form>
+</section>
