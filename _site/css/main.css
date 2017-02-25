@@ -15,7 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    /*border: 1px solid black;*/
 }
 a {
     color: inherit;
@@ -121,6 +121,7 @@ h2 {
     text-shadow: 2px 1px black;
     color: white;
 }
+}
 h3 {
       font-size: 1.2rem;
       text-align: center;
@@ -137,7 +138,7 @@ header {
   height: 80px;
   padding: 0;
 }
-nav, .nav-items {
+header nav, .nav-items {
   display: flex;
 }
 nav {
@@ -239,6 +240,21 @@ color: blue;
 .interactive-content.active {
   transform: translateY(0);
 }
+/*This is the Services Section*/
+.service-container {
+  padding: 5%;
+   margin: 0 auto;
+}
+.service {
+  border: 1px solid #333;
+  padding: 5%;
+  border-radius: 5px;
+  margin-bottom: 5%;
+}
+.service li {
+  margin-bottom: 2%;
+}
+
 /*This is the rates section*/
 .boxed-one-size-fits p {
   line-height: 2;

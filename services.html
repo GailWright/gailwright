@@ -2,58 +2,16 @@
 layout: default
 title: Gail Wright
 banner-text: Services
-services:
-  - title: General Administration
-    li:
-      - test: Create, edit , populate Excel and Word Documents
-      - test: Data Entry & Formatting
-      - test: Email Inbox Mangement
-      - test: Diary Management
-      - test: Personal Assistant
-  - title: Information Technology
-    li:
-      - test: User Acceptance Testing
-      - test: Bug Reporting
-      - test: 1st & 2nd line System Support
-      - test: Systems Training
-      - test: Hardware Setup and Maintenance
-      - test: Personal appointment bookings
-      - test: House checks (when away)
-  - title: Lifestyle Management
-    li:
-      - test: Travel Bookings (Business & Personal)
-      - test: Event Planning
-      - test: Appointment Booking (Personal)
-      - test: Personal appointment bookings
-      - test: Gift Purchases
-      - test: Gift Wrapping
-      - test: House checks (Mail, plants etc)
-
 ---
 
 <!-- <body>  -->
-<section>
-  <div>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </div>
-</section>
 
-<section class="services grid-center-spaceAround">
-  {% for services in page.services %}
-  <div class="service-border col-3">
-    <h3>{{services.title}}</h3>
-      <ul>
-        {% for thing in services.li %}
-          <li>{{thing.test}}</li>
-    {% endfor %}
-    </ul>
-  </div>
-  {% endfor %}
-</section>
 
-<section class="Grid">
+<section class="grid service-container">
+
   <div class="col-6">
-    <h3>Administrative Tasks</h3>
+    <div class="service">
+      <h3>Administrative Tasks</h3>
       <ul>
         <li>Create, edit , populate Excel and Word Documents</li>
         <li>Data Entry & Formatting</li>
@@ -63,36 +21,39 @@ services:
         <li></li>
         <li></li>
         <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
       </ul>
+    </div>
   </div>
 
   <div class="col-6">
-    <div >
+    <div class="service">
       <h3>Information Technology</h3>
         <ul>
           <li>User Acceptance Testing - (UAT)</li>
           <li>Test Plans</li>
           <li>Systems Training</li>
           <li>User Manuals & Documentation</li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+        </ul>
+    </div>
+    <div class="service">
+      <h3>Lifestyle Management</h3>
+        <ul>
+          <li>Travel Bookings (Business & Personal)</li>
+          <li>Event Planning</li>
+          <li>Appointment Booking (Personal)</li>
+          <li>Gift Purchases</li>
+          <li>Gift Wrapping</li>
+          <li>House checks (Mail collection, mail scanning, water plants etc)</li>
         </ul>
     </div>
 
-    <div >
-      <h3>Lifestyle Management</h3>
-        <ul>
-          <li>User Acceptance Testing - (UAT)</li>
-          <li>Test Plans</li>
-          <li>Systems Training</li>
-          <li>User Manuals & Documentation</li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-    </div>
   </div>
+
 </section>
