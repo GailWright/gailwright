@@ -15,6 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 a {
     color: inherit;
@@ -130,10 +131,63 @@ h4{
   text-align: center;
   padding: 10px 0;
 }
-header a {
-    font-size: 20px;
-    padding: 2% 1.5% 1%;
+
+header {
+  background-color: #ffffff;
+  height: 80px;
+  padding: 0;
 }
+nav, .nav-items {
+  display: flex;
+}
+nav {
+  justify-content: space-between;
+}
+
+nav a {
+  display: block;
+  padding: 0 25px;
+  line-height: 80px;
+  font-size: 20px;
+}
+nav a:hover {
+  color: #333;
+}
+
+/* Mobile nav button */
+.nav-button {
+  display: none; /* hide button on desktops */
+
+  background-color: transparent;
+  border: none;
+  color: #000;
+  font-size: 30px;
+}
+
+/*This section is for mobile site */
+@media (max-width: 50em) {
+
+  nav {
+    position: relative;
+  }
+  .nav-button {
+    display: block; /* show button on mobile */
+  }
+  header .nav-items {
+    display: none; /* hide menu on mobile */
+  }
+  .mobile-nav-active .nav-items {
+    display: block; /* show menu on menu button click */
+    width: 100%;
+    background-color: #fff;
+    text-align: right;
+    position: absolute;
+    top: 80px; /* height of nav */
+    right: 0;
+  }
+
+}
+
 
 /*-------body------------*/
 
@@ -191,7 +245,10 @@ color: blue;
   padding: 2%;
 }
 .boxed-border p {
-  line-height: 2;  
+  line-height: 2;
+}
+.narrative{
+  line-height: 1.4;
 }
 
 /*This is the contact section*/
@@ -212,3 +269,4 @@ color: blue;
   .skills .box .box-feature {
     background-color: #eee;
   }
+}

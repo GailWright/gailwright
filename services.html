@@ -42,11 +42,57 @@ services:
   {% for services in page.services %}
   <div class="service-border col-3">
     <h3>{{services.title}}</h3>
-    <ul>
-    {% for thing in services.li %}
-      <li>{{thing.test}}</li>
+      <ul>
+        {% for thing in services.li %}
+          <li>{{thing.test}}</li>
     {% endfor %}
     </ul>
   </div>
   {% endfor %}
+</section>
+
+<section class="Grid">
+  <div class="col-6">
+    <h3>Administrative Tasks</h3>
+      <ul>
+        <li>Create, edit , populate Excel and Word Documents</li>
+        <li>Data Entry & Formatting</li>
+        <li>Email Inbox Management</li>
+        <li>Diary Management</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+  </div>
+
+  <div class="col-6">
+    <div >
+      <h3>Information Technology</h3>
+        <ul>
+          <li>User Acceptance Testing - (UAT)</li>
+          <li>Test Plans</li>
+          <li>Systems Training</li>
+          <li>User Manuals & Documentation</li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+    </div>
+
+    <div >
+      <h3>Lifestyle Management</h3>
+        <ul>
+          <li>User Acceptance Testing - (UAT)</li>
+          <li>Test Plans</li>
+          <li>Systems Training</li>
+          <li>User Manuals & Documentation</li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+    </div>
+  </div>
 </section>
