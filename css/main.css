@@ -7,7 +7,7 @@
 6.
 */
 
-
+/* Featured Color -- #e4bdb8 */
 
 /*This is the reset*/
 
@@ -19,30 +19,65 @@
 }
 a {
     color: inherit;
+    display: inline-block;
 }
+a:hover {
+     color: #e4bdb8;
+}
+
 /*------Universal Section------*/
 
 body {
     font-family: 'Lato', sans-serif;
+    color: rgb(60,60,60);
     }
-header, section, footer {
-    padding: 2% 6%;
+header, footer {
+    padding: 2% 5%;
 }
+section {
+  padding: 10vh 5%;
+}
+
 h1, h2, h3, h4 {
     font-family: 'Lato', sans-serif;
+    margin-bottom: 0.5em;
 }
 h1 {
     font-size: 4.5rem;
 }
 h2 {
-    font-size: 2rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color:  #e4bdb8;
 }
 h3 {
-   font-size: 1.5rem;
+   font-size: 1.2rem;
+   text-transform: uppercase;
+   color:  #e4bdb8;
 }
+.fa {
+     color:  #e4bdb8;
+}
+
 p {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
+hr {
+  border: none;
+  border-top: 2px solid #e4bdb8;
+  width: 45px;
+  margin-bottom: 2rem;
+  display: block;
+}
+.center hr {
+  margin: 1rem auto 2rem;
+}
+
+ul {
+  list-style-position: inside;
+}
+
 .center {
     text-align: center;
 }
@@ -76,21 +111,35 @@ a {
   max-width: 500px;
   margin: 0 auto;
   padding: 50px 0;
-
-  }
+}
 form label {
   display: block;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-bottom: 0.5em;
+  color: #e4bdb8;
 }
 form input, form textarea {
   width: 100%;
   display: block;
-  height: 40px;
-  line-height: 40px;
+  min-height: 40px;
   margin-bottom: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
+  border: 2px solid #e4bdb8;
 }
 form textarea {
 height: 150px;
+}
+
+input[type="submit"] {
+  background-color: #e4bdb8;
+  color: white;
+  text-transform: uppercase;
+  font-weight:bold;
+}
+
+.light-bg {
+    background-color: rgb(252,252,252);
 }
 
 /*boxed border style*/
@@ -98,38 +147,35 @@ height: 150px;
   border: 2px;
   border-color: #e4bdb8;
   border-style: solid;
-  padding: 10%;
+  padding: 5%;
+  margin-bottom:1rem;
 }
 
 /*------header section-----*/
 
 .banner {
-    min-height: 50vh;
-    background-image: url("/images/virtualassistant.jpg");
+    min-height: 70vh;
+    background-image: url("/images/desk.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 h1 {
-    padding: 5%;
-    font-size: 3.5rem;
-    text-align: center;
-    text-shadow: 2px 1px black;
-    color: white;
+  padding: 5%;
+  font-size: 2.5rem;
+  text-align: center;
 }
-h2 {
-    text-shadow: 2px 1px black;
-    color: white;
+.banner h2 {
+  color: rgb(60,60,60);
+  text-transform:none;
 }
-}
+
 h3 {
       font-size: 1.2rem;
-      text-align: center;
       padding: 10px 0;
 }
 h4{
   font-size: 1.5rem;
-  text-align: center;
   padding: 10px 0;
 }
 
@@ -147,12 +193,11 @@ nav {
 
 nav a {
   display: block;
-  padding: 0 25px;
+  padding: 0 1em;
   line-height: 80px;
-  font-size: 20px;
 }
 nav a:hover {
-  color: #333;
+  color: #e4bdb8;;
 }
 
 /* Mobile nav button */
@@ -195,17 +240,29 @@ nav a:hover {
 .information {
   background-color: #efefef;
 }
+.small-button {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color:  #e4bdb8;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #e4bdb8;
+}
+
+.small-button:hover {
+  color: #e4bdb8;
+  border-width: 2px;
+}
+
+
 .information grid-3 {
   font-size:2rem:
   margin:1rem;
   text-align: justify;
   display:block;
 }
-.aboutme {
+.emphasis {
   font-size: 1.5rem;
-}
-a:hover {
-color: blue;
 }
 
 /*----- Interactive blocks -----*/
@@ -246,7 +303,7 @@ color: blue;
    margin: 0 auto;
 }
 .service {
-  border: 1px solid #333;
+  border: 1px solid #e4bdb8;
   padding: 5%;
   border-radius: 5px;
   margin-bottom: 5%;
@@ -256,16 +313,6 @@ color: blue;
 }
 
 /*This is the rates section*/
-.boxed-one-size-fits p {
-  line-height: 2;
-  padding: 2%;
-}
-.boxed-border p {
-  line-height: 2;
-}
-.narrative{
-  line-height: 1.4;
-}
 
 /*This is the contact section*/
 .form h4 {
@@ -277,6 +324,10 @@ color: blue;
 .background {
     background-color: grey;
     color: white;
+}
+
+footer .fa {
+  margin-right: 1rem;
 }
 
 /*my media queries go here at the bottom of the page*/
