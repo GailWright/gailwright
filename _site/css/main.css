@@ -319,6 +319,20 @@ nav a:hover {
   line-height: 2;
 }
 
+/* These are to style the placeholder in the form for each browser */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: 'Lato', sans-serif;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    font-family: 'Lato', sans-serif;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    font-family: 'Lato', sans-serif;
+}
+:-moz-placeholder { /* Firefox 18- */
+    font-family: 'Lato', sans-serif;
+}
+
 /*--- This is my footer section---*/
 
 .background {
