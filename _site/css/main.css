@@ -40,7 +40,7 @@ header, footer {
     padding: 2% 5%;
 }
 section {
-  padding: 10vh 5%;
+  padding: 5vh 5%;
 }
 
 h1, h2, h3, h4 {
@@ -160,8 +160,8 @@ input[type="submit"] {
 /*------header section-----*/
 
 .banner {
-    min-height: 80vh;
-    background-image: url("/images/desk.jpg");
+    min-height: 70vh;
+    background-image: url("/images/desk_1.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
