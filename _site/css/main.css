@@ -22,7 +22,7 @@ a {
     display: inline-block;
 }
 a.banner-link:visited, a.banner-link:link{
-  color:  #e4bdb8;
+  font-style: italic;
 
 }
 
