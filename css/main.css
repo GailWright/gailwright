@@ -201,6 +201,11 @@ header {
 header nav, .nav-items {
   display: flex;
 }
+.logo img {
+  height: auto;
+  width: 25%;
+  padding: 2%;
+}
 nav {
   justify-content: space-between;
 }
@@ -314,9 +319,10 @@ nav a:hover {
 /*This section is for the About Me page*/
 
 .img-wrap img {
-  height: 30em;
-  width: 30em;
+  height: auto;
+  width: 100%;
   border-radius:50em;
+  padding: 5%;
 
 }
 
@@ -366,6 +372,10 @@ nav a:hover {
 footer .fa {
   margin-right: 1rem;
 }
+footer nav .icon{
+
+}
+
 
 /*my media queries go here at the bottom of the page*/
 
