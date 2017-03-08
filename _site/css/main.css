@@ -384,6 +384,7 @@ footer .fa {
 @media (max-width: 768px){
   .skills .box .box-feature {
     background-color: #eee;
+    width: 100%;
       }
   footer .icon div {
           padding: 0;
