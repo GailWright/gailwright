@@ -237,12 +237,14 @@ nav a:hover {
   }
   .nav-button {
     display: block; /* show button on mobile */
-  }
+    padding: 1em;
+}
   header .nav-items {
     display: none; /* hide menu on mobile */
   }
   .mobile-nav-active .nav-items {
-    display: block; /* show menu on menu button click */
+    display: block;     /* show menu on menu button click */
+    padding: 0.5em;
     width: 100%;
     background-color: #fff;
     text-align: right;
@@ -375,11 +377,15 @@ footer .fa {
 
 
 
+
+
 /*my media queries go here at the bottom of the page*/
 
 @media (max-width: 768px){
   .skills .box .box-feature {
     background-color: #eee;
-    width: 100%
-  }
+      }
+  footer .icon div {
+          padding: 0;
+      }
 }
