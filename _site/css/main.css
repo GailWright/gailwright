@@ -378,7 +378,8 @@ footer .fa {
 /*my media queries go here at the bottom of the page*/
 
 @media (max-width: 768px){
-  .skills .box .box-feature {
+  .skills .box .box-feature .col-1 .col-2 .col-4 .col-7 .col-12 .col-3 .col-8 {
     background-color: #eee;
+    width:
   }
 }
