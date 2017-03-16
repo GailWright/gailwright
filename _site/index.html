@@ -1,25 +1,56 @@
-   ---
-layout: default
-title: Gail Wright
-banner-text: Gail Wright Virtual Assistant
-banner-catchy-phrase: Do you need help to achieve a better work-life balance - and time to focus on your core business. <br/> ...I'm Wright there when you need me!
-information:
-  - title: About me
-    description: My mission is to provide administrative support to professionals, entrepreneurs and business owners allowing them the time to get on with doing what they do best.
-    path: about.html
-  - title: Services
-    description:  Everything from administrative assistance to website design and creation, bookkeeping, data entry and the list goes on and on...
-    path: services.html
-  - title: Rates
-    description: Every one has different requirements. <br> That's why I offer three different charging models based on your individual needs.
-    path: rates.html
-  - title: Contact
-    description: Ready to go ? <br>Let's get started now - by Phone, Email, Skype, Hangouts etc
-    path: contact.html
+ <!DOCTYPE html>
+<html>
+<!-- This is the head and it is in the includes folder -->
+<head>
+  <!--  -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
----
+  <title>Gail Wright</title>
 
-<!-- <body>  -->
+<!--This is fonts awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!--This is the font I am using from Google Fonts  -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+<!-- This is the gridlex link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.2.4/gridlex.min.css">
+  <link rel="stylesheet" text="text/css" href="css/main.css">
+
+</head>
+  <body>
+    <!--this is my shared site header which is in the includes folder  -->
+    <!--This is for header information-->
+
+    <!--This is where my logo will live  -->
+
+      <header class="top-header">
+        <nav>
+          <a href="/" class="logo"><img src="images/business_card_logo1.jpg" alt="LOGO"></a>
+          <div class="nav-items">
+            <a href="index">Home</a>
+            <a href="About">About</a>
+            <a href="Services">Services</a>
+            <a href="Rates">Rates</a>
+            <a href="Contact">Contact</a>
+          </div>
+          <!-- Nav button for mobile sites -->
+          <button class="nav-button" type="button" name="button">=</button>
+        </nav>
+      </header>
+
+    <section class="banner">
+
+      <div class="center">
+        <h1>Gail Wright Virtual Assistant</h1>
+        <h2>Do you need help to achieve a better work-life balance - and time to focus on your core business. <br/> ...I'm Wright there when you need me!</h2>
+      </div>
+    </section>
+
+
+    <!--This is where all my site content goes  -->
+    <!-- <body>  -->
 <section>
   <h2> What I can Offer </h2>
   <hr>
@@ -38,14 +69,86 @@ information:
     <h2> How I can Help </h2>
     <hr>
     <div class="grid">
-            {% for information in page.information %}
+            
           <!-- Description About Me what is my background etc -->
           <div class="block col-3_sm-12">
             <!--Information Icon  font awesome-->
             <i class="fa fa-snowflake-o" aria-hidden="true"></i>
-            <h3>  {{information.title}}  </h3>
-            <p>  {{information.description}}</p>
-            <a class="small-button" href="{{information.path}}">see more ...</a>
+            <h3>  About me  </h3>
+            <p>  My mission is to provide administrative support to professionals, entrepreneurs and business owners allowing them the time to get on with doing what they do best.</p>
+            <a class="small-button" href="about.html">see more ...</a>
           </div>
-    {% endfor %}
+    
+          <!-- Description About Me what is my background etc -->
+          <div class="block col-3_sm-12">
+            <!--Information Icon  font awesome-->
+            <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+            <h3>  Services  </h3>
+            <p>  Everything from administrative assistance to website design and creation, bookkeeping, data entry and the list goes on and on...</p>
+            <a class="small-button" href="services.html">see more ...</a>
+          </div>
+    
+          <!-- Description About Me what is my background etc -->
+          <div class="block col-3_sm-12">
+            <!--Information Icon  font awesome-->
+            <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+            <h3>  Rates  </h3>
+            <p>  Every one has different requirements. <br> That's why I offer three different charging models based on your individual needs.</p>
+            <a class="small-button" href="rates.html">see more ...</a>
+          </div>
+    
+          <!-- Description About Me what is my background etc -->
+          <div class="block col-3_sm-12">
+            <!--Information Icon  font awesome-->
+            <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+            <h3>  Contact  </h3>
+            <p>  Ready to go ? <br>Let's get started now - by Phone, Email, Skype, Hangouts etc</p>
+            <a class="small-button" href="contact.html">see more ...</a>
+          </div>
+    
 </section>
+
+
+
+
+    <footer class="background center">
+<!--This is the footer and it is in the includes folder  -->
+
+
+        <h2 class="center" id="contact">Get in touch </h2>
+        <a class="padding-1 block"href="tel:+61400019387"><i class="fa fa-mobile" aria-hidden="true"></i>+6140019387</a>
+        <a class="padding-1 block"href="mailto:hello@gailwrightva.com.au"><i class="fa fa-envelope-o" aria-hidden="true"></i>hello@gailwrightva.com.au</a>
+
+        <nav class="icon">
+          <div class="grid-center">
+            <div class="col-2_sm-12">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+              <a class="padding-1" href="https://www.linkedin.com/in/gail-wright-va/" target="_blank">Linkedin</a>
+            </div>
+
+            <div class="col-2_sm-12">
+              <i class="fa fa-facebook-official" aria-hidden="true"></i>
+              <a class="padding-1" href="https://www.facebook.com/Gail-Wright-Virtual-Assistant-1821545234837642/"target="_blank">Facebook</a>
+            </div>
+            <!--Information Icon  font awesome-->
+            <div class="col-2_sm-12">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <a class="padding-1" href="Instagram"target="_blank">Instragram</a>
+            </div>
+          </div>
+
+        </nav>
+      <div class="one">
+        Copyright 2017 - All rights reserved
+      </div>
+      <div class="two">
+        ©GailWrightVirtualAssistant&nbsp; ©GailWrightVA
+      </div>
+
+
+    </footer>
+<!-- This is the jQuery library -scripts/main.js> -->
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    </body>
+</html>
